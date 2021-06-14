@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/73f2978a29.js" crossorigin="anonymous"></script>
+        <title>À la française</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <i class="fas fa-arrow-left"></i>
+            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="header__heading">
+        </header>
+        <section class="rest-menus">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="rest-menus__picture">
+            <h1 class="rest-menus__heading">À la française</h1>
+            <i class="far fa-heart"></i>
+            <form method="POST" action="traitement.php">  
+
+                <div class="rest-menu">
+                    <h2 class="rest-menu__heading">Entrées</h2>
+                    <div>
+                        <label for="tartare" class="rest-menu__legend">Tartare de poulpe acidulé<span>Aux zests d'orange</span><span>25€</span>
+                        <input type="checkbox" name="tartare" id="tartare"/></label>
+                    </div>
+                    <div>
+                        <label for="veloute" class="rest-menu__legend">Velouté de légumes d'antan<span>Carotte, panais, topinambour</span><span>35€</span>
+                        <input type="checkbox" name="veloute" id="veloute"/></label> 
+                    </div>
+                    <div>
+                        <label for="soupe" class="rest-menu__legend">Soupe à l'oignon<span>Revisitée</span><span>20€</span>
+                        <input type="checkbox" name="soupe" id="soupe"/></label>
+                    </div>
+                </div>
+                <div class="rest-menu">
+                    <h2 class="rest-menu__heading">Plats</h2>
+                    <div>
+                        <label for="coquilles" class="rest-menu__legend">Coquilles Saint-Jacques<span>Accompagnées d'une purée de panais</span><span>40€</span>
+                        <input type="checkbox" name="coquilles" id="coquilles"/></label>
+                    </div>
+                    <div>
+                        <label for="magret" class="rest-menu__legend">Magret de canard<span>Et parmentier de pommes de terre</span><span>35€</span>
+                        <input type="checkbox" name="magret" id="magret"/></label>  
+                    </div>
+                    <div>
+                        <label for="pigeonneau" class="rest-menu__legend">Pigeonneau d’Ille-et-Vilaine<span>Sur son lit de gnocchis aux légumes</span><span>44€</span>
+                        <input type="checkbox" name="pigeonneau" id="pigeonneau"/></label> 
+                    </div>
+                </div>
+                <div class="rest-menu">
+                    <h2 class="rest-menu__heading">Desserts</h2>
+                    <div>
+                        <label for="petales" class="rest-menu__legend">Pétales de violettes glacés<span>Et purée de noisettes</span><span>18€</span>
+                        <input type="checkbox" name="petales" id="petales"/></label>
+                    </div>
+                    <div>
+                        <label for="fondant" class="rest-menu__legend">Fondant au chocolat<span>Revisité</span><span>22€</span>
+                        <input type="checkbox" name="fondant" id="fondant"/></label> 
+                    </div>
+                    <div>
+                        <label for="millefeuille" class="rest-menu__legend">Millefeuille croustillant<span>Myrtilles et pâte d’amande</span><span>23€</span>
+                        <input type="checkbox" name="millefeuille" id="millefeuille"/></label>
+                    </div>
+                </div>
+                <a href="#"><button>Commander</button></a>
+            </form> 
+        </section>
+        <footer class="footer">
+            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="footer__logo">
+            <p class="footer__paragraph"><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+            <p class="footer__paragraph"><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+            <p class="footer__paragraph">Mentions légales</p>
+            <p class="footer__paragraph">Contact (chercher pour le renvoyer vers un mail)</p>
+        </footer>
+    </body>
