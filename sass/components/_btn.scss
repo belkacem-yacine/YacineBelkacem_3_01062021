@@ -1,0 +1,66 @@
+/*bouton page d'accueil et menu*/
+
+.btn-location
+{
+    text-align: center;
+}
+
+.rest-search__btn , .btn-location__btn
+{
+    @include button;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(350deg, lighten($color-primary, 5), lighten($color-secondary, 5));
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        border-radius: 25px;
+        box-shadow: 6px 6px 5px gray;
+    }
+}
+
+.rest-search__btn a , .btn-location__btn a
+{
+    color: #fff;
+}
+
+/*coeur qui se remplit au survol*/
+
+.rest-card__heart , .rest-menus__heart
+    {
+        margin-right: 30px;
+        font-size: x-large;
+        position: relative;
+    }
+
+.empty
+    {
+        position: relative;
+    }
+    
+.rest-card__heart--full , .rest-menus__heart--full
+{
+    background: linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+
+    &:hover
+    {
+        opacity: 1;
+    }
+}

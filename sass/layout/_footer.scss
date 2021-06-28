@@ -1,0 +1,35 @@
+.footer
+{
+    background-color: lighten(black, 20); ;
+    margin-top: -18px;
+    padding-left: 17px;
+    height: 190px;
+
+    &__logo
+    {
+        color: #fff;
+        font-size: large;
+        padding-top: 17px;
+    }
+
+    &__container
+    {
+        line-height: 12px;
+        font-weight: bold;
+    }
+
+    &__paragraph , &__paragraph--modif
+    {
+        color: #fff;
+    }
+
+    &__paragraph i
+    {
+        margin-right: 9px;
+    }
+
+    &__paragraph--modif i
+    {
+        margin-right: 15px;
+    }
+}

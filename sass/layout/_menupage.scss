@@ -1,0 +1,58 @@
+.rest-menus
+{
+    background-color:lighten(lightgrey, 15);
+    padding-bottom: 35px;
+    position: relative;
+
+    &__picture
+    {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }    
+
+    &__heading
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        background-color: lighten(lightgrey, 15);
+        width: 100%;
+        margin-top: -70px;
+        padding-top: 10px;
+        border-radius: 35px 35px 0px 0px; 
+    }  
+    
+    &__heading h1
+    {
+        margin-left: 17px;
+        font-size: 24px;
+    }    
+
+    &__heart
+    {
+        margin-right: 40px;
+        font-size: x-large;
+        position: relative;
+        z-index: 1;
+        &:hover{
+            & .rest-card__heart--full{
+                opacity: 1;
+            }
+        }
+        &__heart--full{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: $color-primary;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+            display: none;
+        }
+    }    
+}
