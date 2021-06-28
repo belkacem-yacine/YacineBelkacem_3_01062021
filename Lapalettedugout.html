@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/73f2978a29.js" crossorigin="anonymous"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Ohmyfood - Menu - La palette du goût</title>
+        <link rel="stylesheet" href="./public/css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__previous">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>    
+            </div>
+            <h1 >
+                <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo">
+            </h1>  
+        </header>
+        <section class="rest-menus">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du goût" class="rest-menus__picture">
+            <div class="rest-menus__heading">
+                <h1>La palette du goût</h1>
+                <div class="rest-menus__heart">
+                    <i class="empty far fa-heart"></i>
+                    <div class="rest-menus__heart--full"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            <form method="POST" action="traitement.php">  
+                <div class="menus">
+                    <div class="rest-menu">
+                        <h2 class="rest-menu__heading">Entrées</h2>
+                        <div>
+                            <input type="checkbox" name="fricassee" class="rest-menu__slide" id="fricassee"/>
+                            <label for="fricassee" class="rest-menu__legend">
+                                <span class="bold">Fricassée d'escargot</span><span class="space-between"><span class="ellipsis">Au piment d'Espelette</span><span>25€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="foie" class="rest-menu__slide" id="foie"/>
+                            <label for="foie" class="rest-menu__legend">
+                                <span class="bold">Foie gras de canard mi-cuit</span><span class="space-between"><span class="ellipsis">Et ses copeaux de truffe noire</span><span>35€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="oeuf" class="rest-menu__slide" id="oeuf"/>
+                            <label for="oeuf" class="rest-menu__legend">
+                                <span class="bold">Oeuf au plat</span><span class="space-between"><span class="ellipsis">Assaisonné à la truffe sur lit de caviar</span><span>20€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="rest-menu">
+                        <h2 class="rest-menu__heading">Plats</h2>
+                        <div>
+                            <input type="checkbox" name="filet" class="rest-menu__slide" id="filet"/>
+                            <label for="filet" class="rest-menu__legend">
+                                <span class="bold">Filet de boeuf aux herbes</span><span class="space-between"><span class="ellipsis">Accompagné de sa ribambelle de légumes</span><span>40€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="parmentier" class="rest-menu__slide" id="parmentier"/>
+                            <label for="parmentier" class="rest-menu__legend">
+                                <span class="bold">Parmentier de queue de boeuf</span><span class="space-between"><span class="ellipsis">À la truffe noire sur sa purée de panais</span><span>35€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label>  
+                        </div>
+                        <div>
+                            <input type="checkbox" name="turbot" class="rest-menu__slide" id="turbot"/>
+                            <label for="turbot" class="rest-menu__legend">
+                                <span class="bold">Filet de turbot</span><span class="space-between"><span class="ellipsis">Aux agrumes</span><span>44€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label> 
+                        </div>
+                    </div>
+                    <div class="rest-menu">
+                        <h2 class="rest-menu__heading">Desserts</h2>
+                        <div>
+                            <input type="checkbox" name="paris" class="rest-menu__slide" id="paris"/>
+                            <label for="paris" class="rest-menu__legend">
+                                <span class="bold">Paris-Brest</span><span class="space-between"><span class="ellipsis">Revisité</span><span>18€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="macaron" class="rest-menu__slide" id="macaron"/>
+                            <label for="macaron" class="rest-menu__legend">
+                                <span class="bold">Macaron au chocolat d'exception</span><span class="space-between"><span class="ellipsis">Et glace à la vanille de Madagascar</span><span>22€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="mousse" class="rest-menu__slide" id="mousse"/>
+                            <label for="mousse" class="rest-menu__legend">
+                                <span class="bold">Mousse au chocolat</span><span class="space-between"><span class="ellipsis">Au piment d'Espelette et à la truffe noire</span><span>23€</span></span>
+                                <div class="rest-menu__card-check"><i class="fas fa-check-circle"></i></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-location">
+                    <button class="btn-location__btn"><a href="#">Commander</a></button>
+                </div>    
+            </form> 
+        </section>
+        <footer class="footer">
+            <h1 class="footer__logo">ohmyfood</h1>
+            <div class="footer__container">
+                <a href="#"><p class="footer__paragraph--modif"><i class="fas fa-utensils"></i>Proposer un restaurant</p></a>
+                <a href="#"><p class="footer__paragraph"><i class="fas fa-hands-helping"></i>Devenir partenaire</p></a>
+                <a href="#"><p class="footer__paragraph">Mentions légales</p></a>
+                <a href="mailto:contact.ohmyfood@gmail.com"><p class="footer__paragraph">Contact</p></a>
+            </div>    
+        </footer>
+    </body>
