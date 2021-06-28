@@ -1,0 +1,130 @@
+/*partie fonctionnement*/
+.site-ope
+{
+    margin: 40px 15px 0px 17px;
+}
+
+.instruction-list
+{
+    margin-left: -25px;
+    @include media-tablette{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    &__element
+    {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        border: 1px solid lighten(lightgrey, 15);
+        border-radius: 18px;
+        margin: 15px 0px;
+        height: 60px;
+        background-color: lighten(lightgrey, 15);
+        @include media-tablette{
+            width: 31%;
+        }
+    }   
+    
+    &__element:hover
+    {
+        background: linear-gradient(350deg, $color-primary, $color-secondary);
+        color: #fff;
+    }
+
+    &__element p
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-primary;
+        background-color: $color-primary;
+        border-radius: 20px;
+        margin-left: -12px;
+        margin-right: 16px;
+        height: 20px;
+        width: 20px;
+        color: #fff;
+    }   
+
+    &__element i
+    {
+        color: gray;
+        margin-right: 20px;
+    }
+}
+
+/*partie restaurants*/
+
+.rest-cards
+{
+    background-color: lighten(lightgrey, 15); ;
+    padding: 0px 17px 15px 17px;
+
+    &__heading
+    {
+    padding-top: 35px;
+    }
+}
+
+.rest
+{
+    @include media-tablette{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.rest-card
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 5px lightgray;
+    position: relative;
+    @include media-tablette{
+        width: 48%;
+    }
+
+    @include desktop-only{
+        width: 23%;
+    }
+
+    &__picture
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 150px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &__legend
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -2px 0px 5px 13px;
+        line-height: 9px;
+    }
+
+    &__new
+    {
+        background-color: $color-tertiary;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        height: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        right: 2rem;
+        margin-top: 12px;
+        color: darken($color-tertiary, 50);
+    }
+}
