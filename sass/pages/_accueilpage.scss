@@ -118,13 +118,13 @@
         position: absolute;
         display: flex;
         align-items: center;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
-        height: 20px;
-        padding: 5px;
-        border-radius: 5px;
-        right: 2rem;
+        height: 18px;
+        padding: 4px 12px;
+        border-radius: 2px;
+        right: 0.7rem;
         margin-top: 12px;
-        color: darken($color-tertiary, 50);
+        color: darken($color-tertiary, 45);
     }
 }

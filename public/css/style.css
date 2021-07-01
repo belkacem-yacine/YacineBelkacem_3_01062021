@@ -103,6 +103,7 @@ h2 {
   box-shadow: 6px 6px 5px lightgray;
   position: relative;
   z-index: 1;
+  color: #fff;
 }
 .rest-search__btn:hover::after, .btn-location__btn:hover::after {
   opacity: 1;
@@ -120,10 +121,6 @@ h2 {
   transition: opacity 250ms;
   border-radius: 25px;
   box-shadow: 6px 6px 5px gray;
-}
-
-.rest-search__btn a, .btn-location__btn a {
-  color: #fff;
 }
 
 /*coeur qui se remplit au survol*/
@@ -234,7 +231,7 @@ header h1 {
 }
 @media screen and (min-width: 900px) {
   .rest-menu {
-    width: 32%;
+    width: 31%;
   }
 }
 .rest-menu__heading {
@@ -259,8 +256,14 @@ header h1 {
 .rest-menu__legend:hover > .rest-menu__card-check {
   animation: check-in 600ms ease-in-out forwards;
 }
-.rest-menu__legend:hover > .space-between {
+.rest-menu__legend:hover > .space-between, .rest-menu__legend:hover > .bold {
   animation: slide 600ms ease-in-out both;
+}
+.rest-menu__legend:hover i {
+  animation: spin 0.5s linear;
+}
+.rest-menu__legend input {
+  display: none;
 }
 @media screen and (min-width: 900px) {
   .rest-menu__legend {
@@ -268,13 +271,11 @@ header h1 {
     justify-content: space-evenly;
   }
 }
-.rest-menu__legend input {
-  display: none;
-}
 
 .bold {
   font-weight: bold;
   font-size: 16px;
+  animation: slide-out 600ms ease-in-out;
 }
 
 .space-between {
@@ -306,7 +307,6 @@ header h1 {
 .rest-menu__card-check i {
   color: #fff;
   overflow: hidden;
-  animation: spin 1.5s linear 1200ms;
 }
 
 input[type=checkbox].rest-menu__slide:checked + label > .rest-menu__card-check, input[type=checkbox].rest-menu__slide:hover + label > .rest-menu__card-check {
@@ -506,14 +506,14 @@ input[type=checkbox].rest-menu__slide:checked + label > .space-between {
   position: absolute;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  height: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  right: 2rem;
+  height: 18px;
+  padding: 4px 12px;
+  border-radius: 2px;
+  right: 0.7rem;
   margin-top: 12px;
-  color: #1b6150;
+  color: #217460;
 }
 
 /*# sourceMappingURL=style.css.map */
