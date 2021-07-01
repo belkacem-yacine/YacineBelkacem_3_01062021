@@ -104,6 +104,7 @@ h2 {
   position: relative;
   z-index: 1;
   color: #fff;
+  font-weight: bold;
 }
 .rest-search__btn:hover::after, .btn-location__btn:hover::after {
   opacity: 1;
