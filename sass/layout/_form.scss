@@ -74,14 +74,20 @@
         animation: down 1.5s ease-in-out both;
         position: relative;
 
+       
         &:hover > .rest-menu__card-check 
         {
             animation: check-in 600ms ease-in-out forwards;
         }
 
-        &:hover > .space-between
+        &:hover > .space-between , &:hover > .bold
         {
             animation: slide 600ms ease-in-out both;
+        }
+        
+        &:hover i 
+        {
+            animation: spin 0.5s linear;
         }
 
         & input
@@ -100,6 +106,7 @@
 {
     font-weight: bold;
     font-size: 16px;
+    animation: slide-out 600ms ease-in-out;
 }
 
 .space-between
@@ -135,7 +142,6 @@
     {
         color: #fff;
         overflow: hidden;
-        animation: spin 1.5s linear 1200ms ;
     }
 }
 
