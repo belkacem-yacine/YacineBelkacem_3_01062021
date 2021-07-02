@@ -84,7 +84,7 @@
 
         &:hover > .space-between , &:hover > .bold
         {
-            animation: slide 600ms ease-in-out both;
+            animation: slide 600ms ease-in-out forwards;
         }
         
         &:hover i 
@@ -153,7 +153,7 @@ input[type="checkbox"].rest-menu__slide:checked + label > .rest-menu__card-check
     animation: check-in 600ms ease-in-out forwards;
 }
 
-input[type="checkbox"].rest-menu__slide:checked + label > .space-between
+input[type="checkbox"].rest-menu__slide:checked + label > .space-between , input[type="checkbox"].rest-menu__slide:checked + label > .bold
 {
     animation: slide 600ms ease-in-out forwards;
 }

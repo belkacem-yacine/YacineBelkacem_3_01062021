@@ -261,7 +261,7 @@ header h1 {
   animation: check-in 600ms ease-in-out forwards;
 }
 .rest-menu__legend:hover > .space-between, .rest-menu__legend:hover > .bold {
-  animation: slide 600ms ease-in-out both;
+  animation: slide 600ms ease-in-out forwards;
 }
 .rest-menu__legend:hover i {
   animation: spin 0.5s linear;
@@ -318,7 +318,7 @@ input[type=checkbox].rest-menu__slide:checked + label > .rest-menu__card-check, 
   animation: check-in 600ms ease-in-out forwards;
 }
 
-input[type=checkbox].rest-menu__slide:checked + label > .space-between {
+input[type=checkbox].rest-menu__slide:checked + label > .space-between, input[type=checkbox].rest-menu__slide:checked + label > .bold {
   animation: slide 600ms ease-in-out forwards;
 }
 
