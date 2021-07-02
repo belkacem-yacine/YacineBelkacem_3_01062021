@@ -2,6 +2,12 @@
 .site-ope
 {
     margin: 40px 15px 0px 17px;
+
+    &__heading
+    {
+        font-size: 19px;
+        font-weight: bold;
+    }
 }
 
 .instruction-list
@@ -23,15 +29,20 @@
         height: 60px;
         background-color: lighten(lightgrey, 15);
         @include media-tablette{
-            width: 31%;
+            width: 31%;}
+
+        &:hover
+        {
+            background: lighten($color-primary, 35);
         }
+        
+        &:hover i
+        {
+            color: $color-primary;
+        } 
     }   
     
-    &__element:hover
-    {
-        background: linear-gradient(350deg, $color-primary, $color-secondary);
-        color: #fff;
-    }
+    
 
     &__element p
     {
@@ -64,7 +75,9 @@
 
     &__heading
     {
-    padding-top: 35px;
+        padding-top: 35px;
+        font-size: 19px;
+        font-weight: bold;
     }
 }
 
@@ -109,7 +122,12 @@
         justify-content: space-between;
         align-items: center;
         margin: -2px 0px 5px 13px;
-        line-height: 9px;
+        line-height: 5px;
+    }
+
+    &__heading
+    {
+        font-size: 15px;
     }
 
     &__new

@@ -14,6 +14,7 @@
     text-align: center;
     animation: loader 2s;
     animation-fill-mode: both;
+    z-index: 2;
 
     &__quart
     {
